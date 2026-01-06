@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+}
+
+.topbar {
+  background: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  color: #0055ff;
+  font-weight: bold;
+  padding-left: 40px;
+}
+.logo span {
+  color: #000;
+}
+.top-nav
+{
+  margin-right: 40px;
+}
+.top-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.signin-btn {
+  margin-left: 20px;
+  background: #0055ff;
+  color: #fff;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+}
+
+/* .sidebar {
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: sticky;
+  top: 70px;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+} */
+
+.content {
+  flex: 1;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* padding-top: 1px; */
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: white;
+  /* padding: 100px; */
+  padding: 100px 100px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.search-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.tabs button {
+  margin: 5px 10px 5px 0;
+  padding: 6px 10px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.tabs .active {
+  background: #333;
+  color: #fff;
+}
+
+.search-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+ padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-fields input,
+.search-fields select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+.center-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+.search-btn:hover {
+  background-color: #005fcc;
+}
+
+.offers-strip {
+  margin: 40px auto;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+.offers-strip h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.offers-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.offers-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.offer-box {
+  flex: 0 0 auto;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.offer-box:hover {
+  /* transform: translateY(-5px); */
+}
+.sticker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: #e74c3c; /* You can change color to match brand */
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.offer-box h4,
+.offer-box p {
+  margin: 0;
+  /* background: rgba(0, 0, 0, 0.5); optional overlay for readability */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+/* offer */
